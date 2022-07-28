@@ -24,16 +24,20 @@
 
 /* main code */
 
+body{
+    background: var(--bg-light);
+}
+
 #container{
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: var(--bg-dark);
+    background: var(--bg-light);
 }
 
 #showcase{
     margin: 90px auto;
-    background-color: var(--bg-light);
+    background-color: var(--bg-dark);
     height: 403px;
     padding: 20px;
     border-radius: 10px;
