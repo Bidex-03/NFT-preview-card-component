@@ -10,7 +10,7 @@
 /* Utility classes */
 
 :root{
-    --bg-dark: hsl(215, 36%, 21%);
+    --bg-dark: hsl(216, 25%, 27%);
     --bg-light: hsl(216, 50%, 16%);
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
@@ -33,6 +33,7 @@ body{
     height: 100vh;
     display: flex;
     background: var(--bg-light);
+    overflow: hidden;
 }
 
 #showcase{
