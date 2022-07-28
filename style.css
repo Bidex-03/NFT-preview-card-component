@@ -10,7 +10,6 @@
 /* Utility classes */
 
 :root{
-    --bg-dark: hsl(216, 25%, 27%);
     --bg-light: hsl(216, 50%, 16%);
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
@@ -19,6 +18,16 @@
 
 .text-primary{
     color: var(--Soft-blue);
+    font-family: 'Outfit' , sans-serif;
+}
+
+.curText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+    font-weight: 600;
+    /* background: var(--white); */
 }
 
 
@@ -26,12 +35,14 @@
 
 body{
     background: var(--bg-light);
+    font-family: 'Outfit' , sans-serif;
 }
 
 #container{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
+    /* align-items: center; */
     background: var(--bg-light);
     overflow: hidden;
 }
@@ -39,19 +50,20 @@ body{
 #showcase{
     margin: auto;
     margin-top: 30px;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     /* height: 350px; */
     padding: 20px;
     border-radius: 10px;
     width:100%;
     max-width: 20rem;
     height: 35rem;
-    box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px 5px 35px 5px rgba(0,0,0,0.5);
 }
 
 .image img{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 /* @media query */
@@ -62,3 +74,56 @@ body{
     }
 }
 
+/* Texts code */
+
+#text h1{
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+#text p{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.currency{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Outfit' , sans-serif;
+    border-bottom: 1px solid var(--Soft-blue);
+    padding-bottom: 2rem;
+    margin-bottom: 20px;
+}
+
+.eth-Text{
+    color: var(--Cyan);
+}
+
+.clock-Text{
+    color: var(--Soft-blue);
+}
+
+#creation{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: var(--Soft-blue);
+    /* font-weight: 300; */
+}
+
+#creation img{
+    width: 2rem;
+    margin-right: 10px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+}
+
+.name{
+    color: var(--white);
+    margin-left: 6px;
+}
