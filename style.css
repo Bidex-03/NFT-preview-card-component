@@ -28,19 +28,19 @@ body{
     background: var(--bg-light);
 }
 
-#container{
+/* #container{
     width: 100%;
     height: 100vh;
     display: flex;
     background: var(--bg-light);
     overflow: hidden;
-}
+} */
 
 #showcase{
     margin: auto;
     margin-top: 50px;
     background-color: var(--bg-dark);
-    height: 403px;
+    /* height: 350px; */
     padding: 20px;
     border-radius: 10px;
     width:100%;
