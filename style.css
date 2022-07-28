@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility classes */
+
+:root{
+    --bg-dark: hsl(215, 36%, 21%);
+    --bg-light: hsl(216, 50%, 16%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.text-primary{
+    color: var(--Soft-blue);
+}
+
+
+/* main code */
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: var(--bg-dark);
+}
+
+#showcase{
+    margin: 90px auto;
+    background-color: var(--bg-light);
+    height: 403px;
+    padding: 20px;
+    border-radius: 10px;
+    width:100%;
+    max-width: 20rem;
+    height: 35rem;
+    box-shadow: -5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* @media query */
+
+@media screen and (max-width:375px) {
+    #showcase{
+        margin: 20px;
+    }
+}
+
